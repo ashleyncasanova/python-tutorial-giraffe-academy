@@ -37,8 +37,6 @@ print("Giraffe Academy")
 ```
 >_Returns:_ Giraffe Academy
 
-
-
 \
 **Example 2:** We can store this string value inside of a variable (phrase).
 
@@ -61,7 +59,7 @@ print(phrase + "is cool")
 **Example 4:** We can also use functions to modify/ get information, about our strings.
 ```python
 phrase = "Giraffe Academy"
-print (phrase_______)
+print(phrase_______)
 ```
 |phrase(_______)  |Returns         |Description                                           |
 | ---             | ---            | ---                                                  |
@@ -73,13 +71,13 @@ print (phrase_______)
 |.index("G")      |0               |Returns index number corresponding to its string value|
 |.replace("G","J")|Jiraffe Academy |Functions as a search and replace                     |
 |                 |                |                                                      |
->Note: Index numbers re assigned begining at 0 (i.e. G = 0, i = 1, r = 3, etc.)
+>Note: Index numbers are assigned begining at 0 (i.e. G = 0, i = 1, r = 3, etc.)
 
 \
 **Example 5:** Functions can be used in combination with eachother.
 ```python
 phrase = "Giraffe Academy"
-print (phrase.upper().isupper())
+print(phrase.upper().isupper())
 ```
 
 >_Returns:_ True
@@ -88,7 +86,7 @@ print (phrase.upper().isupper())
 **Example 6:** The length function will return the length of a string.
 ```python
 phrase = "Giraffe Academy"
-print (len(phrase))
+print(len(phrase))
 ```
 >_Returns:_ 15
 
@@ -105,3 +103,43 @@ print (len(phrase))
 |                 |                |                                    |
 
 >Note: A backslash is called the escape character; meaning that whatever character comes after it we want to render literally.
+___
+### **Working With Numbers:**
+\
+**Example 1:** We can use the print function to cary out various mathematic equations and print the results.
+```python
+print(10 _ 3)
+```
+|print(10 _ 3)|Returns|Description                       |
+|:---:        |:---:  |---                               |
+|+            |13     |Addition                          |
+|-            |7      |Subtraction                       |
+|/            |3.333  |Division                          |
+|*            |30     |Multiplication                    |
+|%            |1      |Modulus operator returns remainder|
+|             |       |                                  |
+>Note: Parentheses can be used to specify order of operations.
+
+>Note: Python can handle whole numbers, decimal numbers and negative numbers.
+
+\
+**Example 2:** Common functions using numbers.
+```python
+my_num = -5
+print(______)
+```
+|print(______)|Returns|Description                     |
+|:---:        |:---:  |---                             |
+|my_num       |-5     |Returns variable in integer form|
+|str(my_num)  |-5     |Returns variable in string form |
+|abs(my_num)  |5      |Returns absolute value          |
+|pow(3,2)     |9      |3^2                             |
+|max(3,2)     |3      |Returns larger number           |
+|min(3,2)     |2      |Returns smaller number          |
+|round(3.2)   |3      |Rounds input                    |
+|             |       |                                |
+
+>Note: You need to convert numbers into strings in order to print them alongside strings.
+
+\
+**Example 3:** In order to access certain functions we need to import python math.
