@@ -148,7 +148,7 @@ from math import*
 print(______)
 ```
 |print(______)|Returns|Description         |
-|:---         |:---   |---                 |
+|:---:        |:---:  |---                 |
 |floor(3.7)   |3      |Cuts off lower value|
 |ceil(3.7)    |4      |Rounds up           |
 |sqrt(36)     |6      |Returns square root |
@@ -172,3 +172,26 @@ result = float(num1) + float(num2)
 print(result)
 ```
 >Note: Both num1 and num2 are stored in string form and therefore must be converted into either integer (for whole numbers) or float form(for decimal numbers).
+___
+### **Dealing with Lists**
+\
+**Example 1:**
+```python
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+print(_______)
+```
+|print(______)|Description|
+|:---:|---|
+|friends|Prints entire list|
+|friends[0]|Prints name corresponding to index number|
+|friends[1:]|Prints index 1 and all elements after|
+|friends[1:3]|Prints from index 1 up to index 3|
+
+\
+**Example 2:**
+```python
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+friends[1] = "Mike"
+print(friends[1])
+```
+>Note: This will modify index 1 (karen) and instead print Mike.
