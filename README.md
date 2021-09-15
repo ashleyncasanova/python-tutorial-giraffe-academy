@@ -125,14 +125,14 @@ print(10 _ 3)
 \
 **Example 2:** Common functions using numbers.
 ```python
-my_num = -5
+num = -5
 print(______)
 ```
 |print(______)|Returns|Description                     |
 |:---:        |:---:  |---                             |
-|my_num       |-5     |Returns variable in integer form|
-|str(my_num)  |-5     |Returns variable in string form |
-|abs(my_num)  |5      |Returns absolute value          |
+|num          |-5     |Returns variable in integer form|
+|str(num)     |-5     |Returns variable in string form |
+|abs(num)     |5      |Returns absolute value          |
 |pow(3,2)     |9      |3^2                             |
 |max(3,2)     |3      |Returns larger number           |
 |min(3,2)     |2      |Returns smaller number          |
@@ -143,3 +143,12 @@ print(______)
 
 \
 **Example 3:** In order to access certain functions we need to import python math.
+```python
+from math import*
+print(______)
+```
+|print(______)|Returns|Description         |
+|:---         |:---   |---                 |
+|floor(3.7)   |3      |Cuts off lower value|
+|ceil(3.7)    |4      |Rounds up           |
+|sqrt(36)     |6      |Returns square root |
