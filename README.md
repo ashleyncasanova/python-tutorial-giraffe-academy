@@ -1,18 +1,18 @@
 ## [**Python Tutorial**](https://www.youtube.com/watch?v=rfscVS0vtbw&t=2078s)
 ____
-### **Intro:**
+### **Intro**
 
 * _Python_ is a programing language.
 * Need a _text editor_ to write code in (notepad, text edit, etc.)
 >Note: There are special text editors for writing python code called IDE's (integrated develepment environments), we will use _PyCharm_.
 ____
-### **Variables:**
+### **Variables**
 * A _variable_ is a container where we can store certain data types.
     ```python
     variable_name = "some value"
     ```
 ____
-### **Data Types:**
+### **Data Types**
 
 * **Strings** - Store text. Must be written in quotations.
     ```python
@@ -28,7 +28,7 @@ ____
     ```
 >Note: Can adjust data types in middle of code.
 ____
-### **Working With Strings:**
+### **Working With Strings**
 \
 **Example 1:** We can use the print function to print different data types (strings in this case).
 
@@ -104,7 +104,7 @@ print(len(phrase))
 
 >Note: A backslash is called the escape character; meaning that whatever character comes after it we want to render literally.
 ___
-### **Working With Numbers:**
+### **Working With Numbers**
 \
 **Example 1:** We can use the print function to cary out various mathematic equations and print the results.
 ```python
@@ -152,3 +152,23 @@ print(______)
 |floor(3.7)   |3      |Cuts off lower value|
 |ceil(3.7)    |4      |Rounds up           |
 |sqrt(36)     |6      |Returns square root |
+___
+### **How to get user input**
+\
+**Example 1:** Prompts user for name and age and returns input alongside strings.
+```python
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello " + name + "! You are " + age)
+```
+>_Returns:_ Hello Ashley! You are 31
+
+\
+**Example 2:** Prompts user for two numbers and returns their sum.
+```python
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+result = float(num1) + float(num2)
+print(result)
+```
+>Note: Both num1 and num2 are stored in string form and therefore must be converted into either integer (for whole numbers) or float form(for decimal numbers).
