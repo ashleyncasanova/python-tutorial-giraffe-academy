@@ -292,3 +292,28 @@ say_hi("Mike",35)
 >_Returns:_ Hello Mike, you are 35
 
 >Note: You can pass age through as a string ("35") or a number (35) converted into a string.
+___
+### **Return Statement**
+\
+**Example 1:** Simple function containing a single parameter, designed to take in and cube a number.
+```python
+def cube(num):
+    return num*num*num
+
+print(cube(3))
+```
+>_Returns:_ 27
+
+\
+**Example 2:** We can also store our function inside a variable.
+```python
+def cube(num):
+    return num*num*num
+
+result = cube(3)
+print(result)
+```
+>_Returns:_ 27
+
+>Note: The return keyword breaks out of the function automatically; therefore, you cannot add code following the return statement.
+___
