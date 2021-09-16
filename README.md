@@ -258,3 +258,13 @@ print(coordinates[1])
 ```
 >_Returns:_ TypeError: 'tuple' obj. does not support item assignment.
 ___
+### **Tuples V.S. Lists**
+
+|Tuples|Lists|
+|---|---|
+|Coordinates are stored in **parentheses ( )**|Coordinates are stored in **square brackets [ ]**|
+|Tuples are **immutable**, meaning they cannot be changed.|Lists are **mutible**, meaning we can assign different values to them, mutate any of the elements, add, delete, modify or change.|
+|||
+___
+
+
