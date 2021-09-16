@@ -266,5 +266,29 @@ ___
 |Tuples are **immutable**, meaning they cannot be changed.|Lists are **mutible**, meaning we can assign different values to them, mutate any of the elements, add, delete, modify or change.|
 |||
 ___
+### **Functions**
+* A function is a collection of code that performs a specific task.
+* Some functions are already available and can be called using their name.
+* For all other tasks, we can create our own.
 
+\
+**Example 1:**
+```python
+def say_hi():
+    print("Hello User")
 
+say_hi()
+```
+>_Returns:_ Hello User
+
+\
+**Example 2:**
+```python
+def say_hi(name,age):
+    print("Hello " + name + ", you are " + str(age))
+
+say_hi("Mike",35)
+```
+>_Returns:_ Hello Mike, you are 35
+
+>Note: You can pass age through as a string ("35") or a number (35) converted into a string.
