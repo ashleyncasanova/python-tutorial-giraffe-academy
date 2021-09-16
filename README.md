@@ -152,6 +152,7 @@ print(______)
 |floor(3.7)   |3      |Cuts off lower value|
 |ceil(3.7)    |4      |Rounds up           |
 |sqrt(36)     |6      |Returns square root |
+|             |       |                    |
 ___
 ### **How to get user input**
 \
@@ -180,12 +181,13 @@ ___
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 print(_______)
 ```
-|print(______)|Description|
-|:---:|---|
-|friends|Prints entire list|
-|friends[0]|Prints name corresponding to index number|
-|friends[1:]|Prints index 1 and all elements after|
-|friends[1:3]|Prints from index 1 up to index 3|
+|print(______)|Description                              |
+|:---:        |---                                      |
+|friends      |Prints entire list                       |
+|friends[0]   |Prints name corresponding to index number|
+|friends[1:]  |Prints index 1 and all elements after    |
+|friends[1:3] |Prints from index 1 up to index 3        |
+|             |                                         |
 
 \
 **Example 2:**
@@ -195,3 +197,45 @@ friends[1] = "Mike"
 print(friends[1])
 ```
 >Note: This will modify index 1 (karen) and instead print Mike.
+___
+### **List Functions**
+\
+**Example 1:**
+```python
+lucky_numbers = [4,8,15,16,23,24]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+friends______
+print(friends)
+```
+|friends______         |Description                   |
+|:---:                 |---                           |
+|.extend(lucky_numbers)|Add lists together            |
+|.append("Creed")      |Add element to list           |
+|.insert(1,"Kelly")    |Insert element into list      |
+|.remove("Jim")        |Remove element from list      |
+|.clear()              |Remove all elements from list |
+|.pop()                |Removes last element from list|
+|.sort()               |Sorts in alphabetical order   |
+|.reverse()            |Reverses list                 |
+|                      |                              |
+
+\
+**Example 2:**
+```python
+lucky_numbers = [4,8,15,16,23,24]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+friends2 = friends.copy()
+print(friends2)
+```
+\
+**Example 3:**
+```python
+lucky_numbers = [4,8,15,16,23,24]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+print(______)
+```
+|print(______)       |Definition                                               |
+|:---:               |---                                                      |
+|friends.count("Jim")|Counts the number of times an element appears in the list|
+|friends.index("Jim")|Searches for a type of element in the list               |
+|                    |                                                         |
