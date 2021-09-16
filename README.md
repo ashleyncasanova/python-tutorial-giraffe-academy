@@ -239,3 +239,22 @@ print(______)
 |friends.count("Jim")|Counts the number of times an element appears in the list|
 |friends.index("Jim")|Searches for a type of element in the list               |
 |                    |                                                         |
+___
+### **Tuples**
+\
+**Example 1:** Prints coordinates coresponding to a specific index number.
+```python
+coordinates(4,5)
+print(coordinates[0])
+```
+>_Returns:_ 4
+
+\
+**Example 2:** Touples are immutable, meaning they cannot be changed or modified.
+```python
+coordinates(4,5)
+coordinates[1] = 10
+print(coordinates[1])
+```
+>_Returns:_ TypeError: 'tuple' obj. does not support item assignment.
+___
