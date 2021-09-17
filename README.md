@@ -394,3 +394,49 @@ else:
     print("Invalid Operator")
 ```
 ___
+### **Dictionary**
+*Special structure in python that allows us to store key-value pairs.
+\
+**Example 1:** Convert three digit month abreviation into full month name.
+```python
+month_conversions = {
+    "Jan" : "January",
+    "Feb" : "February",
+    "Mar" : "March",
+    "Apr" : "April",
+    "May" : "May",
+    "Jun" : "June",
+    "Jul" : "July",
+    "Aug" : "August",
+    "Sep" : "September",
+    "Oct" : "October",
+    "Nov" : "November",
+    "Dec" : "December",
+}
+
+print(month_conversions["Nov"])
+```
+>_Returns:_ November
+
+\
+**Example 2:** Can specify a default value if key is not found.
+```python
+month_conversions = {
+    "Jan" : "January",
+    "Feb" : "February",
+    "Mar" : "March",
+    "Apr" : "April",
+    "May" : "May",
+    "Jun" : "June",
+    "Jul" : "July",
+    "Aug" : "August",
+    "Sep" : "September",
+    "Oct" : "October",
+    "Nov" : "November",
+    "Dec" : "December",
+}
+
+print(month_conversions.get("Luv","Not a valid key"))
+```
+>_Returns:_ Not a valid key
+___
