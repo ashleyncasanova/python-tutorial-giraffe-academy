@@ -440,3 +440,16 @@ print(month_conversions.get("Luv","Not a valid key"))
 ```
 >_Returns:_ Not a valid key
 ___
+### **While Loops** 
+\
+**Example 1:**
+```python
+i = 1
+while i <= 10:
+    print(i)
+    i = i + 1
+```
+>_Returns:_ 1-10
+
+>Note: You can also use i += 1 (shorthand notation)
+
