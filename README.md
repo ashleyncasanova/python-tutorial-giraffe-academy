@@ -495,3 +495,70 @@ else:
 ```
 >Note: The user will be given three tries to guess the secret word.  If they guess the secret word in three guesses or less, it will print "You win!"; otherwise, it will print "YOU LOSE!".
 ___
+### **For Loops**
+\
+**Example 1:** Strings
+```python
+for letter in "Giraffe Academy":
+    print(letter)
+```
+>Note: Prints the individual letters from "Giraffe Academy", each on a new line.
+
+\
+**Example 2:** Arrays
+```python
+Friends = ["Jim", "Karen", "Kevin"]
+
+for friend in Friends:
+    print(friend)
+```
+>Note: Prints names of friends on individual lines.
+
+\
+**Example 3:** Series of numbers
+```python
+for index in range (10):
+    print(index)
+```
+>Notes: Prints numbers 0-9 on individual lines.
+
+\
+**Example 4: Range of numbers
+```python
+for index in range(3,10):
+    print(index)
+```
+>Notes: Prints numbers 3-9 on individual lines.
+
+\
+**Example 5:** Find the length of an array
+```python
+friends = ["Jim", "Karen", "Kevin"]
+
+print(len(friends))
+```
+>_Returns:_ 3
+ 
+ \
+ **Example 6:** 
+ ```python
+friends = ["Jim", "Karen", "Kevin"]
+
+for index in range(len(friends)):
+    print(friends[index])
+```
+>Note: Prints names of friends on individual lines.
+
+\
+**Example 7:**
+```python
+Friends = ["Jim", "Karen", "Kevin"]
+
+for index in range(5):
+    if index == 0:
+        print("first iteration")
+    else:
+        print("not first")
+```
+>Note: Will print "first iteration" for index number 0, corresponding to Jim, and then "not first" for every subsequent index, up to 5 (four times).
+___
