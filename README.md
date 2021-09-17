@@ -235,7 +235,7 @@ friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 print(______)
 ```
 |print(______)       |Definition                                               |
-|:---:               |---                                                      |
+|---               |---                                                      |
 |friends.count("Jim")|Counts the number of times an element appears in the list|
 |friends.index("Jim")|Searches for a type of element in the list               |
 |                    |                                                         |
@@ -334,7 +334,7 @@ else:
     print("You are not a male and not tall")
 ```
 |is_male|is_male|Returns|
-|---|---|---|
+|:---:|:---:|---|
 |True|True|You are a tall male|
 |True|False|You are a short male|
 |False|True|You are not a male, but you are tall|
@@ -344,4 +344,31 @@ else:
 >Note: If both conditions are met, the code will be executed; otherwise, it will move onto the next line of code.
 
 >Note: Can use "or" if you only require one condition to be met.
+___
+### **If Statements and Comparisons**
+
+\
+**Example 1:**
+```python
+def max_num(num1,num2,num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+print(max_num(3,40,5))
+```
+>_Returns:_ 40
+
+\
+**Table 1:** Other comparison Opperators
+|Comparison Operators|Definition|
+|:---:|---|
+|>=|Greater than or equal too|
+|<=|Less than or equal too|
+|==|Equal|
+|!=|Not equal|
+|||
 ___
