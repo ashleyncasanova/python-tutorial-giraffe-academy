@@ -452,4 +452,46 @@ while i <= 10:
 >_Returns:_ 1-10
 
 >Note: You can also use i += 1 (shorthand notation)
+___
+### **Build a Guessing Game**
+\
+**Example 1:** Guess the secret word.
+```python
+secret_word = "Giraffe"
 
+guess = ""
+
+while guess != secret_word:
+    guess = input("Enter guess: ")
+
+print("You win!")
+```
+>Note: Game will continue to prompt the user to guess the secret word until they get it right. Once they guess the secret word, it will print "You win!".
+
+\
+**Example 2:** You get three tries to guess the secret word.
+```python
+secret_word = "Giraffe"
+
+guess = ""
+
+guess_count = 0
+
+guess_limit = 3
+
+out_of_guesses = False
+
+while guess != secret_word and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter guess: ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Out of guesses, YOU LOSE!")
+else:
+    print("You win!")
+```
+>Note: The user will be given three tries to guess the secret word.  If they guess the secret word in three guesses or less, it will print "You win!"; otherwise, it will print "YOU LOSE!".
+___
