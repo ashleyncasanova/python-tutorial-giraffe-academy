@@ -562,3 +562,27 @@ for index in range(5):
 ```
 >Note: Will print "first iteration" for index number 0, corresponding to Jim, and then "not first" for every subsequent index, up to 5 (four times).
 ___
+### **Exponent Function**
+\
+**Example 1:**
+```python
+print(2**3)
+```
+>_Returns:_ 8
+
+\
+**Example 2:**
+```python
+def raise_to_power(base_num,pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+print(raise_to_power(3,2))
+```
+>_Returns:_ 9
+
+>Note: If pow_num is set to 2, the range will be from 0 up to 2 (0,1); meaning, python will run the for loop two times (corresponding to index 0 and 1).  On the first iteration the result will be set to 3 (1 x 3) and on the second iteration the result will be 9 (3 x 3). After two iterations, python will print the result.
+___
+
