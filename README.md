@@ -317,3 +317,31 @@ print(result)
 
 >Note: The return keyword breaks out of the function automatically; therefore, you cannot add code following the return statement.
 ___
+### **If Statements**
+\
+**Example 1:** Program using if statements; will respond to boolean input.
+```python
+is_male = ______
+is_tall = ______
+
+if is_male and is_tall:
+    print("You are a tall male")
+elif is_male and not(is_tall):
+    print("You are a short male")
+elif not(is_male) and is_tall:
+    print("You are not a male, but you are tall")
+else:
+    print("You are not a male and not tall")
+```
+|is_male|is_male|Returns|
+|---|---|---|
+|True|True|You are a tall male|
+|True|False|You are a short male|
+|False|True|You are not a male, but you are tall|
+|False|False|You are not a male and not tall|
+|||
+
+>Note: If both conditions are met, the code will be executed; otherwise, it will move onto the next line of code.
+
+>Note: Can use "or" if you only require one condition to be met.
+___
