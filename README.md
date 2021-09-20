@@ -8,6 +8,7 @@ ____
 ____
 ### **Variables**
 * A _variable_ is a container where we can store certain data types.
+
     ```python
     variable_name = "some value"
     ```
@@ -26,11 +27,10 @@ ____
     ```python
     is_male = True
     ```
->Note: Can adjust data types in middle of code.
 ____
 ### **Working With Strings**
 \
-**Example 1:** We can use the print function to print different data types (strings in this case).
+**Example 1:** We can use the print function to print different data types.
 
 ```python
 print("Giraffe Academy")
@@ -38,7 +38,7 @@ print("Giraffe Academy")
 >_Returns:_ Giraffe Academy
 
 \
-**Example 2:** We can store this string value inside of a variable (phrase).
+**Example 2:** We can store a string inside of a variable .
 
 ```python
 phrase = "Giraffe Academy"
@@ -128,18 +128,16 @@ print(10 _ 3)
 num = -5
 print(______)
 ```
-|print(______)|Returns|Description                     |
-|:---:        |:---:  |---                             |
-|num          |-5     |Returns variable in integer form|
-|str(num)     |-5     |Returns variable in string form |
-|abs(num)     |5      |Returns absolute value          |
-|pow(3,2)     |9      |3^2                             |
-|max(3,2)     |3      |Returns larger number           |
-|min(3,2)     |2      |Returns smaller number          |
-|round(3.2)   |3      |Rounds input                    |
-|             |       |                                |
-
->Note: You need to convert numbers into strings in order to print them alongside strings.
+|print(______)|Returns|Description                                             |
+|:---:        |:---:  |---                                                     |
+|num          |-5     |Returns variable in integer form                        |
+|str(num)     |-5     |Returns variable in string form                         |
+|abs(num)     |5      |Returns absolute value                                  |
+|pow(3,2)     |9      |Raises the first input to the power of the second input |
+|max(3,2)     |3      |Returns larger number                                   |
+|min(3,2)     |2      |Returns smaller number                                  |
+|round(3.2)   |3      |Rounds input                                            |
+|             |       |                                                        |
 
 \
 **Example 3:** In order to access certain functions we need to import python math.
@@ -153,6 +151,7 @@ print(______)
 |ceil(3.7)    |4      |Rounds up           |
 |sqrt(36)     |6      |Returns square root |
 |             |       |                    |
+>Note: More functions requiring the math module can be found [here](https://docs.python.org/3/library/math.html).
 ___
 ### **How to get user input**
 \
@@ -172,11 +171,11 @@ num2 = input("Enter another number: ")
 result = float(num1) + float(num2)
 print(result)
 ```
->Note: Both num1 and num2 are stored in string form and therefore must be converted into either integer (for whole numbers) or float form(for decimal numbers).
+>Note: Python will convert user input into a string by default; therefore num1 and num2 must be converted into either integer (for whole numbers) or float form (for decimal numbers).
 ___
 ### **Dealing with Lists**
 \
-**Example 1:**
+**Example 1:** Common ways to access elements from a list.
 ```python
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 print(_______)
@@ -188,9 +187,10 @@ print(_______)
 |friends[1:]  |Prints index 1 and all elements after    |
 |friends[1:3] |Prints from index 1 up to index 3        |
 |             |                                         |
+>Note: Negative numbers can be used to access elements from the back of the list.
 
 \
-**Example 2:**
+**Example 2:** We can also modify elements from our list.
 ```python
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends[1] = "Mike"
@@ -200,27 +200,27 @@ print(friends[1])
 ___
 ### **List Functions**
 \
-**Example 1:**
+**Example 1:** Using functions to modify or get information about lists
 ```python
 lucky_numbers = [4,8,15,16,23,24]
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends______
 print(friends)
 ```
-|friends______         |Description                   |
-|:---:                 |---                           |
-|.extend(lucky_numbers)|Add lists together            |
-|.append("Creed")      |Add element to list           |
-|.insert(1,"Kelly")    |Insert element into list      |
-|.remove("Jim")        |Remove element from list      |
-|.clear()              |Remove all elements from list |
-|.pop()                |Removes last element from list|
-|.sort()               |Sorts in alphabetical order   |
-|.reverse()            |Reverses list                 |
-|                      |                              |
+|friends______         |Description                                    |
+|---                   |---                                            |
+|.extend(lucky_numbers)|Add lists together                             |
+|.append("Creed")      |Add element to list                            |
+|.insert(1,"Kelly")    |Insert element into list                       |
+|.remove("Jim")        |Remove element from list                       |
+|.clear()              |Remove all elements from list                  |
+|.pop()                |Removes last element from list                 |
+|.sort()               |Sorts list in ascending or alphabetical order  |
+|.reverse()            |Reverses list                                  |
+|                      |                                               |
 
 \
-**Example 2:**
+**Example 2:** We can also copy our list
 ```python
 lucky_numbers = [4,8,15,16,23,24]
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
@@ -228,14 +228,14 @@ friends2 = friends.copy()
 print(friends2)
 ```
 \
-**Example 3:**
+**Example 3:** Other list functions
 ```python
 lucky_numbers = [4,8,15,16,23,24]
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 print(______)
 ```
 |print(______)       |Definition                                               |
-|---               |---                                                      |
+|---                 |---                                                      |
 |friends.count("Jim")|Counts the number of times an element appears in the list|
 |friends.index("Jim")|Searches for a type of element in the list               |
 |                    |                                                         |
