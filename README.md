@@ -272,7 +272,7 @@ ___
 * For all other tasks, we can create our own.
 
 \
-**Example 1:**
+**Example 1:** Function that prints "Hello User" when called.
 ```python
 def say_hi():
     print("Hello User")
@@ -282,7 +282,7 @@ say_hi()
 >_Returns:_ Hello User
 
 \
-**Example 2:**
+**Example 2:** Multi-parameter function that greets user depending on given user input.
 ```python
 def say_hi(name,age):
     print("Hello " + name + ", you are " + str(age))
@@ -348,7 +348,7 @@ ___
 ### **If Statements and Comparisons**
 
 \
-**Example 1:**
+**Example 1:** Function that takes in three parameters, compairs them and then returns the maximum value.
 ```python
 def max_num(num1,num2,num3):
     if num1 >= num2 and num1 >= num3:
@@ -363,7 +363,7 @@ print(max_num(3,40,5))
 >_Returns:_ 40
 
 \
-**Table 1:** Other comparison Opperators
+**Table 1:** Other comparison opperators
 |Comparison Operators|Definition|
 |:---:|---|
 |>=|Greater than or equal too|
@@ -374,7 +374,7 @@ print(max_num(3,40,5))
 ___
 ### **Building a Better Calculator**
 \
-**Example 1:**
+**Example 1:** The user is prompted to input two numbers and an operator of their choice. The following if statements cary out and print the corresponding calculation.
 ```python
 num1 = float(input("Enter first number: "))
 
@@ -393,9 +393,11 @@ elif op == "*":
 else:
     print("Invalid Operator")
 ```
+>Note: The numbers must be converted into float or integer form.
 ___
 ### **Dictionary**
 *Special structure in python that allows us to store key-value pairs.
+
 \
 **Example 1:** Convert three digit month abreviation into full month name.
 ```python
@@ -441,8 +443,11 @@ print(month_conversions.get("Luv","Not a valid key"))
 >_Returns:_ Not a valid key
 ___
 ### **While Loops** 
+
+*Loops through code repeatedly, until set condition is false.
+
 \
-**Example 1:**
+**Example 1:** The variable "_i_", is initially set equal to one. As long as "_i_" is less than or equal to ten python will loop through the code, printing the value of "_i_" and increasing its value by one.
 ```python
 i = 1
 while i <= 10:
@@ -496,6 +501,8 @@ else:
 >Note: The user will be given three tries to guess the secret word.  If they guess the secret word in three guesses or less, it will print "You win!"; otherwise, it will print "YOU LOSE!".
 ___
 ### **For Loops**
+* Used to loop through certain collections in python.
+
 \
 **Example 1:** Strings
 ```python
@@ -540,7 +547,7 @@ print(len(friends))
 >_Returns:_ 3
  
  \
- **Example 6:** 
+ **Example 6:** Can set range using length function
  ```python
 friends = ["Jim", "Karen", "Kevin"]
 
@@ -548,6 +555,8 @@ for index in range(len(friends)):
     print(friends[index])
 ```
 >Note: Prints names of friends on individual lines.
+
+>Note: Range is set to the length of the friends variable (0-3), printing friends cooresponding to the indicies 0, 1, and 2.
 
 \
 **Example 7:**
