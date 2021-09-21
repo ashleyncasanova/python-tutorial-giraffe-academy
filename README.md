@@ -627,3 +627,36 @@ for row in number_grid:
         print(col)
 ```
 >Note: Will print each value in the 2D array on separate line.
+___
+### **Building a Translator**
+* Takes in a string and converts it into anothetr language.
+    ```
+    Giraffe Language
+    vowels -> g
+    - - - - - - - - - 
+    dog -> dgg
+    cat -> cgt
+    ```
+\
+**Example 1:** We can create a function to simulate the Giraffe Language above
+```python
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter in "AEIOUaeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input("Enter a phrase:"))) 
+```
+
+>Note: Line four checks to see if there are any vowels in the string. We could also use...
+```python
+if letter.lower() in "aeiou":
+```
+___
