@@ -559,7 +559,7 @@ for index in range(len(friends)):
 >Note: Range is set to the length of the friends variable (0-3), printing friends cooresponding to the indicies 0, 1, and 2.
 
 \
-**Example 7:**
+**Example 7:** You can use all kinds of logic inside for loops
 ```python
 Friends = ["Jim", "Karen", "Kevin"]
 
@@ -573,14 +573,14 @@ for index in range(5):
 ___
 ### **Exponent Function**
 \
-**Example 1:**
+**Example 1:** Shorthand power notation
 ```python
 print(2**3)
 ```
 >_Returns:_ 8
 
 \
-**Example 2:**
+**Example 2:** Multi-parameter function using for loops to raise one input to another
 ```python
 def raise_to_power(base_num,pow_num):
     result = 1
@@ -594,4 +594,36 @@ print(raise_to_power(3,2))
 
 >Note: If pow_num is set to 2, the range will be from 0 up to 2 (0,1); meaning, python will run the for loop two times (corresponding to index 0 and 1).  On the first iteration the result will be set to 3 (1 x 3) and on the second iteration the result will be 9 (3 x 3). After two iterations, python will print the result.
 ___
+### **2D Lists and Nested Loops**
+\
+**Example 1:** You can create a grid-like structure in python using 2D lists
+```python
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
 
+print(number_grid[2][1])
+
+```
+>_Returns:_ 8
+
+>Note: Can access certain elements by indicating the row [2] and column [1] you want to access (remember to start counting at zero).
+
+\
+**Example 2:** Nested for loop
+```python
+ number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+
+for row in number_grid:
+    for col in row:
+        print(col)
+```
+>Note: Will print each value in the 2D array on separate line.
