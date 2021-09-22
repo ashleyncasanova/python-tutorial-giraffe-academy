@@ -3,10 +3,13 @@ ____
 ### **Intro**
 
 * _Python_ is a programing language.
+
 * Need a _text editor_ to write code in (notepad, text edit, etc.)
+
 >Note: There are special text editors for writing python code called IDE's (integrated develepment environments), we will use _PyCharm_.
 ____
 ### **Variables**
+
 * A _variable_ is a container where we can store certain data types.
 
     ```python
@@ -16,14 +19,19 @@ ____
 ### **Data Types**
 
 * **Strings** - Store text. Must be written in quotations.
+    
     ```python
     character_name = "Tom"
     ```
+
 * **Numbers** - Store whole or decimal numbers. 
+
     ```python
     character_age = 50
     ```
+
 * **Boolians** - Store True or False value.
+
     ```python
     is_male = True
     ```
@@ -42,6 +50,7 @@ print("Giraffe Academy")
 
 ```python
 phrase = "Giraffe Academy"
+
 print(phrase)
 ```
 >_Returns:_ Giraffe Academy
@@ -51,16 +60,20 @@ print(phrase)
 
 ```python
 phrase = "Giraffe Academy"
+
 print(phrase + "is cool")
 ```
 >_Returns:_ Giraffe Academy is cool
 
 \
 **Example 4:** We can also use functions to modify/ get information, about our strings.
+
 ```python
 phrase = "Giraffe Academy"
+
 print(phrase_______)
 ```
+
 |phrase(_______)  |Returns         |Description                                           |
 | ---             | ---            | ---                                                  |
 |.lower()         |giraffe academy |Converts entire string to lower case                  |
@@ -71,12 +84,15 @@ print(phrase_______)
 |.index("G")      |0               |Returns index number corresponding to its string value|
 |.replace("G","J")|Jiraffe Academy |Functions as a search and replace                     |
 |                 |                |                                                      |
+
 >Note: Index numbers are assigned begining at 0 (i.e. G = 0, i = 1, r = 3, etc.)
 
 \
 **Example 5:** Functions can be used in combination with eachother.
+
 ```python
 phrase = "Giraffe Academy"
+
 print(phrase.upper().isupper())
 ```
 
@@ -84,8 +100,10 @@ print(phrase.upper().isupper())
 
 \
 **Example 6:** The length function will return the length of a string.
+
 ```python
 phrase = "Giraffe Academy"
+
 print(len(phrase))
 ```
 >_Returns:_ 15
@@ -107,6 +125,7 @@ ___
 ### **Working With Numbers**
 \
 **Example 1:** We can use the print function to cary out various mathematic equations and print the results.
+
 ```python
 print(10 _ 3)
 ```
@@ -124,8 +143,10 @@ print(10 _ 3)
 
 \
 **Example 2:** Common functions using numbers.
+
 ```python
 num = -5
+
 print(______)
 ```
 |print(______)|Returns|Description                                             |
@@ -141,8 +162,10 @@ print(______)
 
 \
 **Example 3:** In order to access certain functions we need to import python math.
+
 ```python
 from math import*
+
 print(______)
 ```
 |print(______)|Returns|Description         |
@@ -156,19 +179,26 @@ ___
 ### **How to get user input**
 \
 **Example 1:** Prompts user for name and age and returns input alongside strings.
+
 ```python
 name = input("Enter your name: ")
+
 age = input("Enter your age: ")
+
 print("Hello " + name + "! You are " + age)
 ```
 >_Returns:_ Hello Ashley! You are 31
 
 \
 **Example 2:** Prompts user for two numbers and returns their sum.
+
 ```python
 num1 = input("Enter a number: ")
+
 num2 = input("Enter another number: ")
+
 result = float(num1) + float(num2)
+
 print(result)
 ```
 >Note: Python will convert user input into a string by default; therefore num1 and num2 must be converted into either integer (for whole numbers) or float form (for decimal numbers).
@@ -176,8 +206,10 @@ ___
 ### **Dealing with Lists**
 \
 **Example 1:** Common ways to access elements from a list.
+
 ```python
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+
 print(_______)
 ```
 |print(______)|Description                              |
@@ -191,9 +223,12 @@ print(_______)
 
 \
 **Example 2:** We can also modify elements from our list.
+
 ```python
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+
 friends[1] = "Mike"
+
 print(friends[1])
 ```
 >Note: This will modify index 1 (karen) and instead print Mike.
@@ -201,10 +236,14 @@ ___
 ### **List Functions**
 \
 **Example 1:** Using functions to modify or get information about lists
+
 ```python
 lucky_numbers = [4,8,15,16,23,24]
+
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+
 friends______
+
 print(friends)
 ```
 |friends______         |Description                                    |
@@ -221,17 +260,24 @@ print(friends)
 
 \
 **Example 2:** We can also copy our list
+
 ```python
 lucky_numbers = [4,8,15,16,23,24]
+
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+
 friends2 = friends.copy()
+
 print(friends2)
 ```
 \
 **Example 3:** Other list functions
+
 ```python
 lucky_numbers = [4,8,15,16,23,24]
+
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+
 print(______)
 ```
 |print(______)       |Definition                                               |
@@ -243,17 +289,22 @@ ___
 ### **Tuples**
 \
 **Example 1:** Prints coordinates coresponding to a specific index number.
+
 ```python
 coordinates(4,5)
+
 print(coordinates[0])
 ```
 >_Returns:_ 4
 
 \
 **Example 2:** Touples are immutable, meaning they cannot be changed or modified.
+
 ```python
 coordinates(4,5)
+
 coordinates[1] = 10
+
 print(coordinates[1])
 ```
 >_Returns:_ TypeError: 'tuple' obj. does not support item assignment.
@@ -268,11 +319,14 @@ ___
 ___
 ### **Functions**
 * A function is a collection of code that performs a specific task.
+
 * Some functions are already available and can be called using their name.
+
 * For all other tasks, we can create our own.
 
 \
 **Example 1:** Function that prints "Hello User" when called.
+
 ```python
 def say_hi():
     print("Hello User")
@@ -283,6 +337,7 @@ say_hi()
 
 \
 **Example 2:** Multi-parameter function that greets user depending on given user input.
+
 ```python
 def say_hi(name,age):
     print("Hello " + name + ", you are " + str(age))
@@ -296,6 +351,7 @@ ___
 ### **Return Statement**
 \
 **Example 1:** Simple function containing a single parameter, designed to take in and cube a number.
+
 ```python
 def cube(num):
     return num*num*num
@@ -306,11 +362,13 @@ print(cube(3))
 
 \
 **Example 2:** We can also store our function inside a variable.
+
 ```python
 def cube(num):
     return num*num*num
 
 result = cube(3)
+
 print(result)
 ```
 >_Returns:_ 27
@@ -320,8 +378,10 @@ ___
 ### **If Statements**
 \
 **Example 1:** Program using if statements; will respond to boolean input.
+
 ```python
 is_male = ______
+
 is_tall = ______
 
 if is_male and is_tall:
@@ -349,6 +409,7 @@ ___
 
 \
 **Example 1:** Function that takes in three parameters, compairs them and then returns the maximum value.
+
 ```python
 def max_num(num1,num2,num3):
     if num1 >= num2 and num1 >= num3:
@@ -364,6 +425,7 @@ print(max_num(3,40,5))
 
 \
 **Table 1:** Other comparison opperators
+
 |Comparison Operators|Definition|
 |:---:|---|
 |>=|Greater than or equal too|
@@ -375,6 +437,7 @@ ___
 ### **Building a Better Calculator**
 \
 **Example 1:** The user is prompted to input two numbers and an operator of their choice. The following if statements cary out and print the corresponding calculation.
+
 ```python
 num1 = float(input("Enter first number: "))
 
@@ -400,6 +463,7 @@ ___
 
 \
 **Example 1:** Convert three digit month abreviation into full month name.
+
 ```python
 month_conversions = {
     "Jan" : "January",
@@ -422,6 +486,7 @@ print(month_conversions["Nov"])
 
 \
 **Example 2:** Can specify a default value if key is not found.
+
 ```python
 month_conversions = {
     "Jan" : "January",
@@ -448,6 +513,7 @@ ___
 
 \
 **Example 1:** The variable "_i_", is initially set equal to one. As long as "_i_" is less than or equal to ten python will loop through the code, printing the value of "_i_" and increasing its value by one.
+
 ```python
 i = 1
 while i <= 10:
@@ -461,6 +527,7 @@ ___
 ### **Build a Guessing Game**
 \
 **Example 1:** Guess the secret word.
+
 ```python
 secret_word = "Giraffe"
 
@@ -475,6 +542,7 @@ print("You win!")
 
 \
 **Example 2:** You get three tries to guess the secret word.
+
 ```python
 secret_word = "Giraffe"
 
@@ -505,6 +573,7 @@ ___
 
 \
 **Example 1:** Strings
+
 ```python
 for letter in "Giraffe Academy":
     print(letter)
@@ -513,6 +582,7 @@ for letter in "Giraffe Academy":
 
 \
 **Example 2:** Arrays
+
 ```python
 Friends = ["Jim", "Karen", "Kevin"]
 
@@ -523,6 +593,7 @@ for friend in Friends:
 
 \
 **Example 3:** Series of numbers
+
 ```python
 for index in range (10):
     print(index)
@@ -531,6 +602,7 @@ for index in range (10):
 
 \
 **Example 4: Range of numbers
+
 ```python
 for index in range(3,10):
     print(index)
@@ -539,6 +611,7 @@ for index in range(3,10):
 
 \
 **Example 5:** Find the length of an array
+
 ```python
 friends = ["Jim", "Karen", "Kevin"]
 
@@ -548,6 +621,7 @@ print(len(friends))
  
  \
  **Example 6:** Can set range using length function
+
  ```python
 friends = ["Jim", "Karen", "Kevin"]
 
@@ -560,6 +634,7 @@ for index in range(len(friends)):
 
 \
 **Example 7:** You can use all kinds of logic inside for loops
+
 ```python
 Friends = ["Jim", "Karen", "Kevin"]
 
@@ -574,6 +649,7 @@ ___
 ### **Exponent Function**
 \
 **Example 1:** Shorthand power notation
+
 ```python
 print(2**3)
 ```
@@ -581,6 +657,7 @@ print(2**3)
 
 \
 **Example 2:** Multi-parameter function using for loops to raise one input to another
+
 ```python
 def raise_to_power(base_num,pow_num):
     result = 1
@@ -597,6 +674,7 @@ ___
 ### **2D Lists and Nested Loops**
 \
 **Example 1:** You can create a grid-like structure in python using 2D lists
+
 ```python
 number_grid = [
     [1, 2, 3],
@@ -614,6 +692,7 @@ print(number_grid[2][1])
 
 \
 **Example 2:** Nested for loop
+
 ```python
  number_grid = [
     [1, 2, 3],
@@ -640,6 +719,7 @@ ___
     ```
 \
 **Example 1:** We can create a function to simulate the Giraffe Language above
+
 ```python
 def translate(phrase):
     translation = ""
@@ -666,19 +746,23 @@ ___
 
 \
 **Example 1:** Comments are written using hashes and typically provide clarifying information fot other developers
+
 ```python
 #This program is cool
 #This program prints out a new string 
+
 print("Comments are fun")
 ```
 
 \
 **Example 2:** For multi-line comments we can use hashes for each new line, or we can sandwich the text in between two sets of three single quotation marks
+
 ```python
 '''
 This program is cool
 This program prints out a string
 '''
+
 print("Comments are fun")
 ```
 >Note: It is common practice to comment out a line of code when troubleshooting program errors.
@@ -742,7 +826,7 @@ ___
 ### **Reading Files**
 
 \
-**Example 1:** Reading files outside of python
+**Example 1:** We can read files outside of python using the open function
 
 File 1: employees.txt
 ```python
@@ -765,15 +849,16 @@ open("employees.txt", "__")
 |r+|Read and write; you can read and change the file|
 |||
 
->Note: Inside open, we can type the name of the file we want to open; that is a relative path to file, an absolute path to file, or just the file name if both files are in the same directory. In this case, employees.txt and app.py are in the same folder/directory so we can just use the name of the file.
-
 >Note: The second parameter we want to include is the mode we want to open the file in.
 
+>Note: Inside open, we can type the name of the file we want to open; that is a relative path to file, an absolute path to file, or just the file name if both files are in the same directory. In this case, employees.txt and app.py are in the same folder/directory so we can just use the name of the file.
 
+\
 \
 **Example 2:** We can use functions to get information about an open file
 
 File 2: app.py
+
 ```python
 employee_file = open("employees.txt", "r ")
 
@@ -785,10 +870,27 @@ employee_file.close()
 |print(employee_file__________)|Definition|
 |---|---|
 |.readable()|Checks if file is readable and returns a boolian value|
-|.read()|Reads the file and returns its contents|
+|.read()|Reads the file and returns all of its contents|
 |.readline()|Reads line one by default; if repeated it will read line two, etc.|
 |.readlines()[1]|Takes all lines inside of file and puts them inside of a list. To access a specific line we can refer to its index number in the list; for example [1] corresponds to line 2 (Dwight - Salesman)|
 
->Note: We usually want to store open file inside of a variable.
+>Note: We usually want to store an open file inside of a variable.
 
 >Note: Once we are done reading a file we can use the close function to close it.
+
+\
+\
+**Example 3:** We can also use the readlines function with a for loop
+
+File 2: app.py
+
+```python
+employee_file = open("employees.txt", "r")
+
+for employee in employee_file.readlines():
+    print(employee)
+
+employee_file.close()
+```
+>Note: Prints out each line in the file.
+___
