@@ -660,3 +660,23 @@ print(translate(input("Enter a phrase:")))
 if letter.lower() in "aeiou":
 ```
 ___
+### **Comments**
+* Non-exicutable line of code, meant to provide insight into the file.
+
+\
+**Example 1:** Comments are written using hashes and typically provide clarifying information fot other developers
+```python
+#This program is cool
+#This program prints out a new string
+print("Comments are fun")
+```
+
+\
+**Example 2:** For multi-line comments we can use hashes for each new line, or we can sandwich the text in between two sets of three single quotation marks
+```python
+'''
+This program is cool
+This program prints out a string
+'''
+print("Comments are fun")
+```
