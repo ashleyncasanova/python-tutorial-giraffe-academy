@@ -739,3 +739,56 @@ except ZeroDivisionError as err:
 ``` 
 >Note: This will print out the error that went wrong.
 ___
+### **Reading Files**
+
+\
+**Example 1:** Reading files outside of python
+
+File 1: employees.txt
+```python
+Jim - Salesman
+Dwight - Salesman
+Pam - Receptionist
+Michael - Manager
+Oscar - Accountant
+```
+File 2: app.py
+```python
+open("employees.txt", "__")
+```
+
+|open("employees.txt", "__")|Description|
+|:---:|---|
+|r|Read; can only read information, cannot modify or change file|
+|w|Writing; you can change the file|
+|a|Append; you can append information onto the end of the file, you cannot modify or change the file|
+|r+|Read and write; you can read and change the file|
+|||
+
+>Note: Inside open, we can type the name of the file we want to open; that is a relative path to file, an absolute path to file, or just the file name if both files are in the same directory. In this case, employees.txt and app.py are in the same folder/directory so we can just use the name of the file.
+
+>Note: The second parameter we want to include is the mode we want to open the file in.
+
+
+\
+**Example 2:** We can use functions to get information about an open file
+
+File 2: app.py
+```python
+employee_file = open("employees.txt", "r ")
+
+print(employee_file.__________)
+
+employee_file.close()
+```
+
+|print(employee_file__________)|Definition|
+|---|---|
+|.readable()|Checks if file is readable and returns a boolian value|
+|.read()|Reads the file and returns its contents|
+|.readline()|Reads line one by default; if repeated it will read line two, etc.|
+|.readlines()[1]|Takes all lines inside of file and puts them inside of a list. To access a specific line we can refer to its index number in the list; for example [1] corresponds to line 2 (Dwight - Salesman)|
+
+>Note: We usually want to store open file inside of a variable.
+
+>Note: Once we are done reading a file we can use the close function to close it.
