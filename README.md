@@ -828,7 +828,8 @@ ___
 \
 **Example 1:** We can read files outside of python using the open function
 
-File 1: employees.txt
+_File 1: employees.txt_
+
 ```python
 Jim - Salesman
 Dwight - Salesman
@@ -836,7 +837,9 @@ Pam - Receptionist
 Michael - Manager
 Oscar - Accountant
 ```
-File 2: app.py
+
+_File 2: app.py_
+
 ```python
 open("employees.txt", "__")
 ```
@@ -857,7 +860,7 @@ open("employees.txt", "__")
 \
 **Example 2:** We can use functions to get information about an open file
 
-File 2: app.py
+_File 2: app.py_
 
 ```python
 employee_file = open("employees.txt", "r ")
@@ -882,7 +885,7 @@ employee_file.close()
 \
 **Example 3:** We can also use the readlines function with a for loop
 
-File 2: app.py
+_File 2: app.py_
 
 ```python
 employee_file = open("employees.txt", "r")
@@ -894,3 +897,205 @@ employee_file.close()
 ```
 >Note: Prints out each line in the file.
 ___
+### **Writing to Files**
+
+\
+**Example 1:** Writing and appending external text files in python
+
+_File 1: employees.txt_
+
+```python
+Jim - Salesman
+Dwight - Salesman
+Pam - Receptionist
+Michael - Manager
+Oscar - Accountant
+```
+
+_File 2: app.py_
+
+```python
+employee_file = open("employees.txt", "a")
+
+employee_file.write("Toby - Human Resources")
+
+employee_file.close()
+```
+
+>Note: Adds appended information to text file. 
+
+>Note: Text will be appended onto an existing line if a new one isnt available in the text file. This can also be rectified by insertig a new line.
+
+```python
+employee_file.write("\nToby - Human Resources")
+```
+
+\
+\
+**Example 2:** We can override an external text file by opening it in write mode.
+
+_File 2: app.py_
+
+```python
+employee_file = open("employees.txt", "w")
+
+employee_file.write("Kelly - Customer Service")
+
+employee_file.close()
+```
+
+>Note: This will replace the entire text file.
+
+\
+\
+**Example 3:** We can also use write mode to create a new file
+
+_File 2: app.py_
+
+```python
+employee_file = open("employees1.txt", "w")
+
+employee_file.write("Kelly - Customer Service")
+
+employee_file.close()
+```
+
+>Note: This will create a new text file called employees1.txt
+
+\
+\
+**Example 4:** We can also use write mode to create a new web page
+
+_File 2: app.py_
+
+```python
+employee_file = open("index.html", "w")
+
+employee_file.write("<p>This is HTML<\p>")
+
+employee_file.close()
+```
+
+>Note: HTML is a web page
+___
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
