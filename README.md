@@ -629,7 +629,8 @@ for row in number_grid:
 >Note: Will print each value in the 2D array on separate line.
 ___
 ### **Building a Translator**
-* Takes in a string and converts it into anothetr language.
+* Takes in a string and converts it into another language.
+
     ```
     Giraffe Language
     vowels -> g
@@ -667,7 +668,7 @@ ___
 **Example 1:** Comments are written using hashes and typically provide clarifying information fot other developers
 ```python
 #This program is cool
-#This program prints out a new string
+#This program prints out a new string 
 print("Comments are fun")
 ```
 
@@ -680,3 +681,61 @@ This program prints out a string
 '''
 print("Comments are fun")
 ```
+>Note: It is common practice to comment out a line of code when troubleshooting program errors.
+___
+### **Try Except**
+* Method of catching errors in python.
+
+\
+**Example 1:** We can use **try** and **except** blocks to catch any input errors that may throw off our code
+
+```python
+try:
+    number = int(input("Enter a number:"))
+    print(number)
+except:
+    print("Invalid input")
+```  
+
+\
+**Example 2:** In most cases the except block by itself is too broad, meaning it will except any errors.
+
+```python
+try:
+    value = 10 / 0
+    number = int(input("Enter a number:"))
+    print(number)
+except:
+    print("Invalid input")
+```
+_Returns:_ Invalid input
+
+\
+**Example 3:** We can specify the types of errors we want to catch
+
+```python
+try:
+    value = 10 / 0
+    number = int(input("Enter a number:"))
+    print(number)
+except ValueError:
+    print("Invalid input")
+except ZeroDivisionError:
+    print("Divided by zero")
+``` 
+
+ \
+**Example 4:** We can also store a specific error as a variable
+
+```python
+try:
+    value = 10 / 0
+    number = int(input("Enter a number:"))
+    print(number)
+except ValueError:
+    print("Invalid input")
+except ZeroDivisionError as err:
+    print(err)
+``` 
+>Note: This will print out the error that went wrong.
+___
