@@ -1054,9 +1054,62 @@ print(useful_tools.roll_dice(10))
     pip uninstall python-docx
     ```
 ___
+### **Classes and Objects**
+
+* Some data types dont fit into the standard categories (i.e. strings, numbers and boolians).
+* We can use classes to define our own data types.
+
+\
+**Step 1:** Define a student _class_
+
+_Student.py_
+```python
+class Student:
+
+    def __init__(self, name, major, gpa, is_on_probation):
+         self.name = name
+         self.major = major
+         self.gpa = gpa
+         self.is_on_probation = is_on_probation
+```
+>Note: The initialize function establishes what attributes a student should have 
+
+\
+**Step 2:** Create a student or _object_ 
+
+_app.py_
+```python
+from Student import Student
+
+student1 = Student("Jim", "Business", 3.1, false)
+
+student2 = Student("Pam", "Art", 2.5, true)
+ 
+print(student1.name)   
+```
+>Note: We can access each of the attributes from this object (name, major, etc.)
+
+>Summary: In Student.py we created a student data type, and in app.py we created student objects.
+___
 
 
 
+
+
+
+
+
+
+
+___
+\
+\
+**END**
+___
+
+```python
+
+```
 
 
 
