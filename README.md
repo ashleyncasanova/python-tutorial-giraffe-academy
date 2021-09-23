@@ -978,14 +978,82 @@ employee_file.close()
 
 >Note: HTML is a web page
 ___
+### **Modules and Pip**
 
+* Module - External python file that we can import into our current python file.
 
+* Pip - Program used to install python modules; commonly refered to as a package manager because it allows you to install, manage and uninstall different python modules.
 
+\
+**Example 1:** Importing functionality from external python files 
 
+_useful_tools.py_
+```python
+meters_in_kilometer = 1000
+beatles = ["John Lennon", "Paul McCartney", "George Harrison", "Ringo Star"]
 
+def get_file_ext(filename):
+    return filename[filename.index(".") + 1:]
 
+def roll_dice(num):
+    return random.randint(1, num)
+```
 
+_app.py_
+```python
+import useful tools
 
+print(useful_tools.roll_dice(10))
+```
+>Note: The import statement allows us to access all of the tools from the useful tools file.
+
+>Note: Using the print function we can specify which variable or function we want to access.
+
+>Note: We can access other useful python modules from the [python module index](https://docs.python.org/3/py-modindex.html), or search for third party modules online.
+
+\
+\
+**Table 1:** Types of Modules
+|Type|Definition|
+|---|---|
+|Built-in|Built into python language; we automatically have access to them|
+|External|Stored in the same folder we installed python in on our computer|
+|||
+
+\
+\
+**How to install and use third party modules:**
+1. Check to see if pip is installed using the terminal command:
+    ```terminal
+    pip --version
+    ```
+
+1. Install pip if no version is found.
+    - Pip comes preinstalled with new version of python 3.
+    
+1. Find a python module you want to install.
+    - e.g. [python-docx](https://python-docx.readthedocs.io/en/latest/) (can create / format word documents inside python).
+
+1. Follow the instalation instructions, which say we can install python-docx using the following terminal command:
+    ```terminal
+    pip install python-docx 
+    ```
+1. In order to use the module in python, we can just refer to the name of the module (docx).
+    ```python
+    import docx
+
+    docx._______
+    ```
+>Note: External python modules are generally stored in Lib folder. In PyCharm, go to External Libraries > lib > site-packages and there should be two new folders (docx and python_docx-0.8.6-py3.6.egg-info) 
+
+\
+\
+**How to uninstall third party modules:**
+1. Use the terminal command:
+    ```terminal
+    pip uninstall python-docx
+    ```
+___
 
 
 
