@@ -1133,8 +1133,10 @@ run_test(questions)
 ``` 
 ___
 ### **Object Functions**
+
 * Functions that can be used inside of a class, to modify or provide specific information about objects in that class.
 
+\
 **Example 1:** Create a function inside a class to check if a student made honor roll
 
 _Student.py_
@@ -1162,6 +1164,55 @@ student2 = Student("Phyllis", "Business", 3.8)
  
 print(student1.on_honor_roll())   
 ```
+___
+### **Inheritance**
+
+\
+**Example 1:** Inherit functionality from an existing class into a new class.
+
+_Chef.py_
+```python
+class Chef:
+
+    def make_chicken(self):
+        print("The chef makes a chicken")
+
+    def make_salad(self):
+        print("The chef makes a salad")
+    
+    def make_special_dish(self):
+        print("The chef makes bbq ribs")
+```
+
+ _ChineseChef.py_
+```python
+from Chef import Chef
+class ChineseChef(chef):
+    
+    def make_special_dish(self):
+        print("The chef makes orange chicken")
+
+    def make_fried_rice(self):
+        print("The chef makes fried rice")
+```
+
+_app.py_
+```python
+from Chef import Chef
+from ChineseChef import ChineseChef
+
+myChef = Chef()
+myChef.make_special_dish()
+
+myChineseChef = ChineseChef()
+myChinese Chef.make_special_dish()
+myChinese Chef.make_chicken()
+```
+>Note: We define the special dish in _ChineseChef.py_ to override the function we inherited from _Chef.py_.
+
+
+
+
 
 
 
