@@ -1131,10 +1131,37 @@ def run_test(questions):
 
 run_test(questions)
 ``` 
+___
+### **Object Functions**
+* Functions that can be used inside of a class, to modify or provide specific information about objects in that class.
 
+**Example 1:** Create a function inside a class to check if a student made honor roll
 
+_Student.py_
+```python
+class Student:
 
+    def __init__(self, name, major, gpa):
+         self.name = name
+         self.major = major
+         self.gpa = gpa
+    
+    def on_honor_roll(self):
+        if self.gpa >= 3.5:
+            return True
+        else:
+            return False
+```
+_app.py_
+```python
+from Student import Student
 
+student1 = Student("Oscar", "Accounting", 3.1)
+
+student2 = Student("Phyllis", "Business", 3.8)
+ 
+print(student1.on_honor_roll())   
+```
 
 
 
