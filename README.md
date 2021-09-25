@@ -1,6 +1,41 @@
 ## [**Python Tutorial**](https://www.youtube.com/watch?v=rfscVS0vtbw&t=2078s)
 ____
-### **Intro**
+## **Contents**
+* [Introduction](#introduction)
+* [Variables](#variables)
+* [Data Types](#data-types)
+* [Working with Strings](#working-with-strings)
+* [Working With Numbers](#working-with-numbers)
+* [Getting Input from users](#getting-input-from-users)
+* [Lists](#lists)
+* [List Functions](#list-functions)
+* [Tuples](#tuples)
+* [Tuples V.S. Lists](#Tuples-V-S--Lists)
+* [Functions](#functions)
+* [Return Statement](#return-statement)
+* [If Statements](#if-statements)
+* [If Statements and Comparisons](#if-statements-and-comparisons)
+* [Building a Better Calculator](#building-a-better-calculator)
+* [Dictionary](#dictionary)
+* [While Loops](#while-loops)
+* [Build a Guessing Game](#build-a-guessing-game)
+* [For Loops](#for-loops)
+* [Exponent Function](#exponent-function)
+* [2D Lists and Nested Loops](#2d-lists-and-nested-loops)
+* [Building a Translator](#building-a-translator)
+* [Comments](#comments)
+* [Try Except](#try-except)
+* [Reading Files](#reading-files)
+* [Writing to Files](#writing-to-files)
+* [Modules and Pip](#modules-and-pip)
+* [Classes and Objects](#classes-and-objects)
+* [Building a Multiple Choice Quiz](#building-a-multiple-choice-quiz)
+* [Object Functions](#object-functions)
+* [Inheritance](#inheritance)
+* [Python Interpreter](#python-interpreter)
+
+___
+### **Introduction**
 
 * _Python_ is a programing language.
 
@@ -176,7 +211,7 @@ print(______)
 |             |       |                    |
 >Note: More functions requiring the math module can be found [here](https://docs.python.org/3/library/math.html).
 ___
-### **How to get user input**
+### **Getting Input from Users**
 \
 **Example 1:** Prompts user for name and age and returns input alongside strings.
 
@@ -203,7 +238,7 @@ print(result)
 ```
 >Note: Python will convert user input into a string by default; therefore num1 and num2 must be converted into either integer (for whole numbers) or float form (for decimal numbers).
 ___
-### **Dealing with Lists**
+### **Lists**
 \
 **Example 1:** Common ways to access elements from a list.
 
@@ -310,6 +345,7 @@ print(coordinates[1])
 >_Returns:_ TypeError: 'tuple' obj. does not support item assignment.
 ___
 ### **Tuples V.S. Lists**
+### <a name="Tuples-V-S--Lists"></a>Tuples V.S. Lists
 
 |Tuples|Lists|
 |---|---|
