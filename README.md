@@ -37,7 +37,7 @@ ____
 ___
 ### **Introduction**
 
-* _Python_ is a programing language.
+* _Python_ is a programing language written in c (another programing language).
 
 * Need a _text editor_ to write code in (notepad, text edit, etc.)
 
